@@ -1,0 +1,33 @@
+{
+  "name": "chrysalis-starter-kit",
+  "version": "1.0.0",
+  "description": "Starter kit for develop with Chrysalis",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrysalisss/Chrysalis-starter-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrysalisss/Chrysalis-starter-kit/issues"
+  },
+  "homepage": "https://github.com/Chrysalisss/Chrysalis-starter-kit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "chrysalis.js": "^0.12.1"
+  }
+}
