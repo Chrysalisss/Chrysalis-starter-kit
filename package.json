@@ -5,18 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development"
+    "dev": "webpack-dev-server --mode development",
+    "fix-code": "prettier --write 'src/**/*.js'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Chrysalisss/Chrysalis-starter-kit.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Chrysalisss/Chrysalis-starter-kit/issues"
-  },
-  "homepage": "https://github.com/Chrysalisss/Chrysalis-starter-kit#readme",
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
@@ -24,6 +15,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "copy-webpack-plugin": "^4.6.0",
     "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.16.4",
     "webpack": "^4.29.4",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
