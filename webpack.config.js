@@ -20,6 +20,18 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
+      minify: {
+        html5: true,
+        collapseWhitespace: true,
+        minifyURLs: false,
+        removeAttributeQuotes: true,
+        removeComments: true,
+        removeOptionalTags: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributese: true,
+        useShortDoctype: true
+      }
     }),
     new CopyPlugin([
       { from: 'src/assets', to: 'assets' },
