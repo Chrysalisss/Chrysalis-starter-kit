@@ -8,16 +8,6 @@
     "dev": "webpack-dev-server --mode development",
     "fix-code": "prettier --write 'src/**/*.js'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Chrysalisss/Chrysalis-starter-kit.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Chrysalisss/Chrysalis-starter-kit/issues"
-  },
-  "homepage": "https://github.com/Chrysalisss/Chrysalis-starter-kit#readme",
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
