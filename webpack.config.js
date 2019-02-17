@@ -23,7 +23,8 @@ module.exports = {
     }),
     new CopyPlugin([
       { from: 'src/assets', to: 'assets' },
-      { from: 'public/style.css' }
+      { from: 'public/style.css' },
+      { from: 'public/favicon.ico' }
     ])
   ]
 };
