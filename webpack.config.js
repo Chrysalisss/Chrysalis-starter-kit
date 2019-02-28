@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -17,6 +18,14 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        parallel: true,
+        cache: true
+      })
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
@@ -24,7 +33,6 @@ module.exports = {
         html5: true,
         collapseWhitespace: true,
         minifyURLs: false,
-        removeAttributeQuotes: true,
         removeComments: true,
         removeOptionalTags: true,
         removeRedundantAttributes: true,
