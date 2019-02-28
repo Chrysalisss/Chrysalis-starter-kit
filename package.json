@@ -21,6 +21,6 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "chrysalis.js": "^0.12.1"
+    "chrysalis.js": "^0.13.0"
   }
 }
