@@ -1,9 +1,9 @@
-import { h, start } from 'chrysalis.js'
+import { h, render } from 'chrysalis.js'
 import Hello from './Hello'
 
 const container = document.getElementById('app')
 
-global.App = () => {
+const App = () => {
   return (
     <div class="main">
       <Hello />
@@ -11,4 +11,4 @@ global.App = () => {
   )
 }
 
-start(container)
+render(<App />, container)
