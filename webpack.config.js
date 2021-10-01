@@ -3,9 +3,9 @@ const CopyPlugin = require('copy-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/index.js',
   output: {
-    filename: 'main.js'
+    filename: 'index.js'
   },
   module: {
     rules: [
